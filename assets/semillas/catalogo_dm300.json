@@ -1,0 +1,736 @@
+{
+  "moto": {
+    "modelo": "Italika DM300",
+    "año": 2024,
+    "ano": 2024,
+    "cilindrada": "292 cc",
+    "tanqueL": 12.0,
+    "aceiteL": 1.3
+  },
+  "ficha_campos": [
+    {
+      "clave": "fecha_compra",
+      "seccion": "identidad",
+      "titulo": "Fecha de compra",
+      "pregunta": "¿En qué fecha se adquirió la motocicleta?",
+      "dondeVerlo": "Factura original de compra o tarjeta de circulación",
+      "opciones": [],
+      "valor": "2024-01-15",
+      "estadoInicial": "verificado",
+      "notaFoto": "Copia de factura de agencia en guantera",
+      "actualizadoEn": "2024-01-15T10:00:00Z"
+    },
+    {
+      "clave": "km_compra",
+      "seccion": "identidad",
+      "titulo": "Kilometraje inicial",
+      "pregunta": "¿Con cuántos kilómetros salió de la agencia?",
+      "dondeVerlo": "Odómetro al momento de entrega en agencia (manual pág. 4)",
+      "opciones": [],
+      "valor": "0",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-01-15T10:00:00Z"
+    },
+    {
+      "clave": "tipo_uso",
+      "seccion": "identidad",
+      "titulo": "Tipo de uso principal",
+      "pregunta": "¿Qué tipo de terreno y exigencia tiene la DM300?",
+      "dondeVerlo": "Declarado por el usuario (ej. Ciudad, Carretera, Mixto)",
+      "opciones": ["Ciudad", "Terracería", "Mixto ciudad y terracería"],
+      "valor": "Mixto ciudad y terracería",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-01-16T12:00:00Z"
+    },
+    {
+      "clave": "niv",
+      "seccion": "identidad",
+      "titulo": "Número de Identificación Vehicular (NIV)",
+      "pregunta": "¿Cuál es el número de serie de 17 dígitos del cuadro?",
+      "dondeVerlo": "Pág. 18 del manual, grabado en el tubo del cabezal de dirección",
+      "opciones": [],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "numero_motor",
+      "seccion": "identidad",
+      "titulo": "Número de serie del motor",
+      "pregunta": "¿Qué código alfa-numérico tiene grabado el motor?",
+      "dondeVerlo": "Pág. 18 del manual, abajo a la izquierda del cárter del motor",
+      "opciones": [],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "paso_cadena",
+      "seccion": "traccion",
+      "titulo": "Paso de la cadena de transmisión",
+      "pregunta": "¿Qué paso tiene la cadena actual (428 o 520)?",
+      "dondeVerlo": "Número grabado en las placas exteriores de los eslabones",
+      "opciones": ["428", "520"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "eslabones_cadena",
+      "seccion": "traccion",
+      "titulo": "Cantidad de eslabones de cadena",
+      "pregunta": "¿Cuántos eslabones tiene la cadena instalada?",
+      "dondeVerlo": "Conteo manual de eslabones o especificación de fábrica (ej. 132L)",
+      "opciones": ["132", "136", "140"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "dientes_corona",
+      "seccion": "traccion",
+      "titulo": "Dientes de la corona (sprocket trasero)",
+      "pregunta": "¿Cuántos dientes tiene la corona de tracción trasera?",
+      "dondeVerlo": "Grabado sobre la cara plana de la corona trasera (ej. 45T)",
+      "opciones": ["43T", "45T", "48T"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "dientes_pinon",
+      "seccion": "traccion",
+      "titulo": "Dientes del piñón de ataque",
+      "pregunta": "¿Cuántos dientes tiene el piñón delantero del eje motor?",
+      "dondeVerlo": "Grabado en el piñón de salida tras retirar la tapa lateral (ej. 15T)",
+      "opciones": ["14T", "15T", "16T"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "bateria_codigo_capacidad",
+      "seccion": "electrico",
+      "titulo": "Modelo y capacidad de batería",
+      "pregunta": "¿Qué modelo y amperaje de batería está montada?",
+      "dondeVerlo": "Etiqueta lateral de la batería bajo el asiento (ej. 12V 9Ah)",
+      "opciones": ["12V 9Ah", "12V 7Ah", "12V 10Ah"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "modelo_bujia",
+      "seccion": "electrico",
+      "titulo": "Modelo y calibración de bujía",
+      "pregunta": "¿Qué bujía tiene instalada el cilindro?",
+      "dondeVerlo": "Grabado en el cuerpo cerámico de la bujía (dado de 17 mm, ej. D8EA / DR8EA)",
+      "opciones": ["D8EA", "DR8EA", "D9EA"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "llanta_delantera",
+      "seccion": "llantas",
+      "titulo": "Medida de llanta delantera",
+      "pregunta": "¿Qué medida de neumático calza el rin delantero de 21\"?",
+      "dondeVerlo": "Costado de la llanta (manual: 80/100-21 con cámara)",
+      "opciones": ["80/100-21", "90/90-21"],
+      "valor": "80/100-21",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-01-16T12:00:00Z"
+    },
+    {
+      "clave": "llanta_trasera",
+      "seccion": "llantas",
+      "titulo": "Medida de llanta trasera",
+      "pregunta": "¿Qué medida de neumático calza el rin trasero de 18\"?",
+      "dondeVerlo": "Costado de la llanta (manual: 120/80-18 con cámara)",
+      "opciones": ["120/80-18", "110/90-18", "130/80-18"],
+      "valor": "120/80-18",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-01-16T12:00:00Z"
+    },
+    {
+      "clave": "presion_llantas",
+      "seccion": "llantas",
+      "titulo": "Presión recomendada de neumáticos",
+      "pregunta": "¿A qué presión se calibran en frío según uso?",
+      "dondeVerlo": "Calcomanía en el basculante (28 PSI delantera / 32 PSI trasera)",
+      "opciones": ["28 PSI / 32 PSI", "25 PSI / 29 PSI", "30 PSI / 34 PSI"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "aceite_especificacion",
+      "seccion": "motor",
+      "titulo": "Especificación de aceite motor",
+      "pregunta": "¿Qué viscosidad y tipo de aceite usa el motor?",
+      "dondeVerlo": "Pág. 24 del manual, SAE 20W-50 API SL o superior (1.3 L)",
+      "opciones": ["20W-50 Mineral", "15W-50 Semisintético", "10W-40 Sintético"],
+      "valor": "20W-50 Mineral",
+      "estadoInicial": "verificado",
+      "notaFoto": "Botella Motul 3000 4T 20W50 en garaje",
+      "actualizadoEn": "2024-01-16T12:00:00Z"
+    },
+    {
+      "clave": "filtro_aire_tipo",
+      "seccion": "motor",
+      "titulo": "Tipo de elemento filtrante de aire",
+      "pregunta": "¿Qué material compone el filtro de admisión?",
+      "dondeVerlo": "Bajo el asiento, elemento de esponja lavable con aceite para filtro",
+      "opciones": ["Esponja lavable", "Papel", "Alto flujo"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "liquido_frenos",
+      "seccion": "frenosSuspension",
+      "titulo": "Especificación de líquido de frenos",
+      "pregunta": "¿Qué grado DOT indica la tapa de la bomba de freno?",
+      "dondeVerlo": "Tapa del depósito de la bomba en manillar: solo DOT 3 o DOT 4",
+      "opciones": ["DOT 3", "DOT 4"],
+      "valor": "DOT 4",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-01-16T12:00:00Z"
+    },
+    {
+      "clave": "espesor_balatas_actual",
+      "seccion": "frenosSuspension",
+      "titulo": "Espesor de material de fricción en balatas",
+      "pregunta": "¿Cuántos milímetros de pasta quedan en balatas delanteras?",
+      "dondeVerlo": "Ranura de desgaste en cáliper delantero (mínimo seguro 2.0 mm)",
+      "opciones": ["> 3.0 mm", "2.0 a 3.0 mm", "< 2.0 mm (reemplazo)"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "medida_reten_suspension",
+      "seccion": "frenosSuspension",
+      "titulo": "Medida de retén de barras telescópicas",
+      "pregunta": "¿Qué diámetro y altura tienen los retenes de suspensión?",
+      "dondeVerlo": "Manual de servicio / barras delanteras invertidas (37x50x11 mm)",
+      "opciones": ["37x50x11 mm", "36x48x11 mm"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "protectores_puno",
+      "seccion": "accesorios",
+      "titulo": "Protectores de puños (Handguards)",
+      "pregunta": "¿Tiene instalados cubrepuños para ramas y viento?",
+      "dondeVerlo": "A simple vista en ambos extremos del manillar",
+      "opciones": ["Sí", "No"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "porta_celular",
+      "seccion": "accesorios",
+      "titulo": "Soporte para celular / GPS",
+      "pregunta": "¿Cuenta con soporte antivibración en el manillar?",
+      "dondeVerlo": "A simple vista montado en la barra central del manillar",
+      "opciones": ["Sí", "No"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "faros_auxiliares",
+      "seccion": "accesorios",
+      "titulo": "Faros LED exploradores auxiliares",
+      "pregunta": "¿Tiene faros auxiliares instalados en defensas?",
+      "dondeVerlo": "A simple vista en las defensas laterales con switch dedicado",
+      "opciones": ["Sí", "No"],
+      "valor": "Sí",
+      "estadoInicial": "verificado",
+      "notaFoto": "Montados en sliders laterales",
+      "actualizadoEn": "2024-02-10T14:30:00Z"
+    },
+    {
+      "clave": "parachoques",
+      "seccion": "accesorios",
+      "titulo": "Defensas laterales / Sliders de motor",
+      "pregunta": "¿Tiene defensas tubulares para caídas?",
+      "dondeVerlo": "A simple vista, defensas tubulares laterales de protección de motor",
+      "opciones": ["Sí", "No"],
+      "valor": "",
+      "estadoInicial": "pendiente",
+      "notaFoto": null,
+      "actualizadoEn": null
+    },
+    {
+      "clave": "cubrecarter",
+      "seccion": "accesorios",
+      "titulo": "Placa cubrecárter de aluminio/acero",
+      "pregunta": "¿Tiene instalada placa protectora inferior de cárter?",
+      "dondeVerlo": "A simple vista, placa protectora inferior del cárter del motor",
+      "opciones": ["Sí", "No"],
+      "valor": "No",
+      "estadoInicial": "verificado",
+      "notaFoto": null,
+      "actualizadoEn": "2024-02-10T14:30:00Z"
+    }
+  ],
+  "tareas_mantenimiento": [
+    {
+      "id": "tarea_cadena",
+      "zona": "Cadena y transmisión",
+      "titulo": "Cadena y transmisión",
+      "descripcion": "Holgura 15 a 20 mm · lubricar cada mes",
+      "intervaloKm": 1000.0,
+      "intervaloDias": 30,
+      "ultimoKm": 22700.0,
+      "ultimaFecha": "2026-10-04T10:00:00Z",
+      "hechoPor": "Mí",
+      "ultimoCosto": 120.0
+    },
+    {
+      "id": "tarea_aceite",
+      "zona": "Motor y aceite",
+      "titulo": "Motor y aceite",
+      "descripcion": "Aceite 1.3 L · bujía 0.6 a 0.7 mm",
+      "intervaloKm": 3000.0,
+      "intervaloDias": 120,
+      "ultimoKm": 21000.0,
+      "ultimaFecha": "2026-09-15T15:00:00Z",
+      "hechoPor": "Taller",
+      "ultimoCosto": 350.0
+    },
+    {
+      "id": "tarea_freno_delantero",
+      "zona": "Freno delantero",
+      "titulo": "Freno delantero",
+      "descripcion": "Balatas: límite 2 mm · líquido DOT 3 o 4",
+      "intervaloKm": 3000.0,
+      "intervaloDias": 90,
+      "ultimoKm": null,
+      "ultimaFecha": null,
+      "hechoPor": null,
+      "ultimoCosto": null
+    },
+    {
+      "id": "tarea_tanque",
+      "zona": "Tanque y combustible",
+      "titulo": "Tanque y combustible",
+      "descripcion": "Capacidad 12 L · llave de paso",
+      "intervaloKm": 6000.0,
+      "intervaloDias": 180,
+      "ultimoKm": 22500.0,
+      "ultimaFecha": "2026-10-15T12:00:00Z",
+      "hechoPor": "Mí",
+      "ultimoCosto": 80.0
+    },
+    {
+      "id": "tarea_escape",
+      "zona": "Escape",
+      "titulo": "Escape",
+      "descripcion": "Gomas de soporte y empaque del tubo",
+      "intervaloKm": 6000.0,
+      "intervaloDias": 180,
+      "ultimoKm": 23000.0,
+      "ultimaFecha": "2026-10-25T17:00:00Z",
+      "hechoPor": "Mí",
+      "ultimoCosto": 0.0
+    },
+    {
+      "id": "tarea_bujia",
+      "zona": "Eléctrico y llantas",
+      "titulo": "Bujía e instalación eléctrica",
+      "descripcion": "Calibrar bujía a 0.6-0.7 mm y verificar terminales",
+      "intervaloKm": 6000.0,
+      "intervaloDias": 180,
+      "ultimoKm": 21000.0,
+      "ultimaFecha": "2026-09-15T15:30:00Z",
+      "hechoPor": "Mí",
+      "ultimoCosto": 95.0
+    },
+    {
+      "id": "tarea_llantas",
+      "zona": "Eléctrico y llantas",
+      "titulo": "Presión y rayos de llantas",
+      "descripcion": "28 PSI delantera / 32 PSI trasera e inspección de rines",
+      "intervaloKm": 1000.0,
+      "intervaloDias": 15,
+      "ultimoKm": 23800.0,
+      "ultimaFecha": "2026-11-10T09:00:00Z",
+      "hechoPor": "Mí",
+      "ultimoCosto": 0.0
+    }
+  ],
+  "refacciones": [
+    {
+      "id": "ref_arrastre_428",
+      "sku": "DM300-CAD-428",
+      "nombre": "Kit de arrastre paso 428 reforzado",
+      "categoria": "Transmisión",
+      "zona": "Cadena y transmisión",
+      "precioEstimado": 680.0,
+      "dependeDeClaveFicha": "paso_cadena",
+      "valorRequerido": "428",
+      "requiereAccesorio": null,
+      "notas": "Corona 45T, piñón 15T y cadena 428H"
+    },
+    {
+      "id": "ref_arrastre_520",
+      "sku": "DM300-CAD-520",
+      "nombre": "Kit de arrastre paso 520 O-Ring",
+      "categoria": "Transmisión",
+      "zona": "Cadena y transmisión",
+      "precioEstimado": 1150.0,
+      "dependeDeClaveFicha": "paso_cadena",
+      "valorRequerido": "520",
+      "requiereAccesorio": null,
+      "notas": "Conversión reforzada enduro con sellos O-Ring"
+    },
+    {
+      "id": "ref_aceite_20w50",
+      "sku": "DM300-MOT-OIL20W50",
+      "nombre": "Aceite 4T 20W-50 1.3L + cedazo",
+      "categoria": "Motor",
+      "zona": "Motor y aceite",
+      "precioEstimado": 240.0,
+      "dependeDeClaveFicha": "aceite_especificacion",
+      "valorRequerido": "20W-50 Mineral",
+      "requiereAccesorio": null,
+      "notas": "Incluye empaque de tapón de drenado y cedazo"
+    },
+    {
+      "id": "ref_bujia",
+      "sku": "DM300-ELE-D8EA",
+      "nombre": "Bujía D8EA / DR8EA",
+      "categoria": "Eléctrico",
+      "zona": "Eléctrico y llantas",
+      "precioEstimado": 95.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": null,
+      "notas": "Rosca estándar 12 mm x 19 mm alcance"
+    },
+    {
+      "id": "ref_balatas_del",
+      "sku": "DM300-FRE-BALDEL",
+      "nombre": "Balatas delanteras DM300",
+      "categoria": "Frenos",
+      "zona": "Freno delantero",
+      "precioEstimado": 190.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": null,
+      "notas": "Compuesto semimetálico de alta disipación térmica"
+    },
+    {
+      "id": "ref_filtro_aire",
+      "sku": "DM300-MOT-FAIRE",
+      "nombre": "Filtro de aire esponja bajo asiento",
+      "categoria": "Admisión",
+      "zona": "Motor y aceite",
+      "precioEstimado": 130.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": null,
+      "notas": "Lavable con agua tibia y jabón neutro"
+    },
+    {
+      "id": "ref_soporte_faros",
+      "sku": "DM300-ACC-SOPFARO",
+      "nombre": "Soporte antivibración para faros auxiliares",
+      "categoria": "Accesorios",
+      "zona": "Eléctrico y llantas",
+      "precioEstimado": 220.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": "faros_auxiliares",
+      "notas": "Abrazaderas de aluminio CNC para tubo de 1 pulgada"
+    },
+    {
+      "id": "ref_tornillo_cubrecarter",
+      "sku": "DM300-ACC-TORNCC",
+      "nombre": "Tornillería de cubrecárter",
+      "categoria": "Accesorios",
+      "zona": "Motor y aceite",
+      "precioEstimado": 85.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": "cubrecarter",
+      "notas": "Tornillos M6 grado 8.8 con arandelas de goma antivibración"
+    },
+    {
+      "id": "ref_camara_del",
+      "sku": "DM300-LLA-CAM21",
+      "nombre": "Cámara delantera 80/100-21",
+      "categoria": "Llantas",
+      "zona": "Eléctrico y llantas",
+      "precioEstimado": 140.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": null,
+      "notas": "Válvula TR4 recta reforzada 2.5 mm de espesor"
+    },
+    {
+      "id": "ref_bateria_gel",
+      "sku": "DM300-ELE-BAT12V",
+      "nombre": "Batería 12V gel",
+      "categoria": "Eléctrico",
+      "zona": "Eléctrico y llantas",
+      "precioEstimado": 650.0,
+      "dependeDeClaveFicha": null,
+      "valorRequerido": null,
+      "requiereAccesorio": null,
+      "notas": "12V 9Ah libre de mantenimiento con activador"
+    }
+  ],
+  "lecturas_odometro": [
+    {
+      "id": "odo_001",
+      "km": 1500.0,
+      "fecha": "2025-12-01T10:00:00Z",
+      "origen": "fichaInicial",
+      "cambioTablero": false,
+      "nota": "Lectura inicial registrada"
+    },
+    {
+      "id": "odo_002",
+      "km": 3500.0,
+      "fecha": "2026-01-05T10:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Servicio de los 3,000 km"
+    },
+    {
+      "id": "odo_003",
+      "km": 5400.0,
+      "fecha": "2026-02-08T10:00:00Z",
+      "origen": "combustible",
+      "cambioTablero": false,
+      "nota": "Carga foránea en ruta"
+    },
+    {
+      "id": "odo_004",
+      "km": 7200.0,
+      "fecha": "2026-03-12T10:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Servicio de 6,000 km"
+    },
+    {
+      "id": "odo_005",
+      "km": 9150.0,
+      "fecha": "2026-04-15T10:00:00Z",
+      "origen": "rapido",
+      "cambioTablero": false,
+      "nota": "Corte de quincena"
+    },
+    {
+      "id": "odo_006",
+      "km": 11300.0,
+      "fecha": "2026-05-18T10:00:00Z",
+      "origen": "rapido",
+      "cambioTablero": false,
+      "nota": "Rodada fin de semana"
+    },
+    {
+      "id": "odo_007",
+      "km": 13400.0,
+      "fecha": "2026-06-20T10:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Servicio de 12,000 km"
+    },
+    {
+      "id": "odo_008",
+      "km": 15600.0,
+      "fecha": "2026-07-22T10:00:00Z",
+      "origen": "combustible",
+      "cambioTablero": false,
+      "nota": "Carga completa"
+    },
+    {
+      "id": "odo_009",
+      "km": 17750.0,
+      "fecha": "2026-08-25T10:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Servicio de 18,000 km"
+    },
+    {
+      "id": "odo_010",
+      "km": 19900.0,
+      "fecha": "2026-09-28T10:00:00Z",
+      "origen": "combustible",
+      "cambioTablero": false,
+      "nota": "Tanque lleno"
+    },
+    {
+      "id": "odo_011",
+      "km": 21000.0,
+      "fecha": "2026-09-15T15:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Servicio de 21,000 km"
+    },
+    {
+      "id": "odo_012",
+      "km": 22700.0,
+      "fecha": "2026-10-04T10:00:00Z",
+      "origen": "servicio",
+      "cambioTablero": false,
+      "nota": "Ajuste de cadena"
+    },
+    {
+      "id": "odo_013",
+      "km": 23800.0,
+      "fecha": "2026-11-10T09:00:00Z",
+      "origen": "combustible",
+      "cambioTablero": false,
+      "nota": "Carga semanal"
+    },
+    {
+      "id": "odo_014",
+      "km": 23880.0,
+      "fecha": "2026-11-13T18:00:00Z",
+      "origen": "rapido",
+      "cambioTablero": false,
+      "nota": "Odómetro actual de referencia"
+    }
+  ],
+  "cargas_combustible": [
+    {
+      "id": "cga_001",
+      "km": 21850.0,
+      "litros": 10.5,
+      "costo": 262.5,
+      "fecha": "2026-09-22T08:00:00Z",
+      "kmPorLitro": 28.6
+    },
+    {
+      "id": "cga_002",
+      "km": 22150.0,
+      "litros": 10.2,
+      "costo": 255.0,
+      "fecha": "2026-09-29T08:30:00Z",
+      "kmPorLitro": 29.4
+    },
+    {
+      "id": "cga_003",
+      "km": 22440.0,
+      "litros": 10.1,
+      "costo": 252.5,
+      "fecha": "2026-10-06T09:00:00Z",
+      "kmPorLitro": 28.7
+    },
+    {
+      "id": "cga_004",
+      "km": 22730.0,
+      "litros": 10.4,
+      "costo": 260.0,
+      "fecha": "2026-10-14T08:15:00Z",
+      "kmPorLitro": 27.9
+    },
+    {
+      "id": "cga_005",
+      "km": 23020.0,
+      "litros": 10.3,
+      "costo": 257.5,
+      "fecha": "2026-10-22T08:45:00Z",
+      "kmPorLitro": 28.2
+    },
+    {
+      "id": "cga_006",
+      "km": 23310.0,
+      "litros": 10.2,
+      "costo": 255.0,
+      "fecha": "2026-10-30T09:10:00Z",
+      "kmPorLitro": 28.4
+    },
+    {
+      "id": "cga_007",
+      "km": 23600.0,
+      "litros": 10.5,
+      "costo": 262.5,
+      "fecha": "2026-11-06T08:20:00Z",
+      "kmPorLitro": 27.6
+    },
+    {
+      "id": "cga_008",
+      "km": 23880.0,
+      "litros": 10.0,
+      "costo": 250.0,
+      "fecha": "2026-11-13T17:30:00Z",
+      "kmPorLitro": 28.0
+    }
+  ],
+  "registros_servicio": [
+    {
+      "id": "srv_001",
+      "tareaId": "tarea_aceite",
+      "tituloTarea": "Motor y aceite",
+      "zona": "Motor y aceite",
+      "km": 21000.0,
+      "fecha": "2026-09-15T15:00:00Z",
+      "realizadoPor": "Taller",
+      "costo": 350.0,
+      "notas": "Cambio de aceite Motul 20W-50 y cedazo limpio"
+    },
+    {
+      "id": "srv_002",
+      "tareaId": "tarea_cadena",
+      "tituloTarea": "Cadena y transmisión",
+      "zona": "Cadena y transmisión",
+      "km": 22700.0,
+      "fecha": "2026-10-04T10:00:00Z",
+      "realizadoPor": "Mí",
+      "costo": 120.0,
+      "notas": "Lavado con queroseno y lubricante en spray"
+    }
+  ],
+  "mediciones_desgaste": [
+    {
+      "id": "med_001",
+      "componente": "Balatas delanteras",
+      "unidad": "mm",
+      "valor": 2.4,
+      "minimoSeguro": 2.0,
+      "maximoSeguro": null,
+      "km": 23880.0,
+      "fecha": "2026-11-13T18:00:00Z",
+      "nota": "Medición con calibrador vernier en pastilla externa"
+    },
+    {
+      "id": "med_002",
+      "componente": "Holgura de cadena",
+      "unidad": "mm",
+      "valor": 24.0,
+      "minimoSeguro": 15.0,
+      "maximoSeguro": 20.0,
+      "km": 23880.0,
+      "fecha": "2026-11-13T18:00:00Z",
+      "nota": "Holgura excesiva (24 mm vs max 20 mm). Requiere tensado urgente."
+    }
+  ]
+}

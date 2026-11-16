@@ -1,0 +1,88 @@
+{
+  "nota": "x e y en porcentaje del lienzo (1600x1120). Zonas de ejemplo: ajustar a mano.",
+  "lienzo": {
+    "ancho": 1600,
+    "alto": 1120
+  },
+  "vistas": [
+    {
+      "id": "izquierda",
+      "angulo": -90,
+      "real": "assets/moto/real/izquierda.webp",
+      "diagrama": "assets/moto/diagrama/izquierda.png",
+      "zonas": [
+        {
+          "nombre": "Motor y aceite",
+          "x": 47.86,
+          "y": 64.54,
+          "estado_ejemplo": "av"
+        },
+        {
+          "nombre": "Cadena y transmisión",
+          "x": 79.85,
+          "y": 75.47,
+          "estado_ejemplo": "ve"
+        },
+        {
+          "nombre": "Freno delantero",
+          "x": 17.72,
+          "y": 75.14,
+          "estado_ejemplo": "av"
+        },
+        {
+          "nombre": "Tanque y combustible",
+          "x": 39.98,
+          "y": 34.73,
+          "estado_ejemplo": "ok"
+        }
+      ]
+    },
+    {
+      "id": "tres_cuartos_izquierda",
+      "angulo": -45,
+      "real": "assets/moto/real/tres_cuartos_izquierda.webp",
+      "diagrama": "assets/moto/diagrama/tres_cuartos_izquierda.png",
+      "zonas": []
+    },
+    {
+      "id": "frente",
+      "angulo": 0,
+      "real": "assets/moto/real/frente.webp",
+      "diagrama": "assets/moto/diagrama/frente.png",
+      "zonas": []
+    },
+    {
+      "id": "tres_cuartos_derecha",
+      "angulo": 45,
+      "real": "assets/moto/real/tres_cuartos_derecha.webp",
+      "diagrama": "assets/moto/diagrama/tres_cuartos_derecha.png",
+      "zonas": []
+    },
+    {
+      "id": "derecha",
+      "angulo": 90,
+      "real": "assets/moto/real/derecha.webp",
+      "diagrama": "assets/moto/diagrama/derecha.png",
+      "zonas": [
+        {
+          "nombre": "Motor y aceite",
+          "x": 50.57,
+          "y": 68.38,
+          "estado_ejemplo": "av"
+        },
+        {
+          "nombre": "Escape",
+          "x": 22.93,
+          "y": 50.31,
+          "estado_ejemplo": "ok"
+        },
+        {
+          "nombre": "Freno delantero",
+          "x": 80.09,
+          "y": 73.07,
+          "estado_ejemplo": "av"
+        }
+      ]
+    }
+  ]
+}
